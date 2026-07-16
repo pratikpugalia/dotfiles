@@ -64,10 +64,34 @@ Work through the material **1-2 concepts at a time**, following this loop:
 
 2. **Check understanding** with a multiple-choice question. The question should test
    whether the user actually understood the concept, not just whether they were
-   paying attention. Write 3-4 options where:
-   - One is correct
-   - The others are plausible misconceptions (not obviously wrong)
-   - Format as lettered options (A, B, C, D)
+   paying attention — and it should not be answerable by process of elimination
+   without understanding anything. Write 3-4 options where:
+   - One is correct.
+   - Each wrong option is a *specific, constructed* misconception, not a vague
+     placeholder. Build them from real failure modes: a plausible off-by-one or
+     scope error, a swapped cause/effect, a nearby concept from earlier in the
+     material misapplied here, or a statement that's true in general but wrong
+     in this specific case.
+   - Every option is similar in length, specificity, and grammatical form to the
+     correct one. A distractor that's shorter, vaguer, or oddly phrased gives
+     itself away without the reader needing to know the material.
+   - No option is absurd, off-topic, or trivially wrong — if you wouldn't believe
+     it yourself for a second, rewrite it.
+   - No "all of the above" / "none of the above", and no option that's a strict
+     subset or superset of another (that makes one of them logically impossible).
+   - The correct answer's letter position varies across questions — don't default
+     to always putting it in the same slot.
+   - **Before showing the question, sanity-check it**: could someone who *hasn't*
+     understood the concept eliminate wrong answers just by their surface
+     properties (length, phrasing, obviousness) rather than their content? If yes,
+     rewrite the distractors until the only way through is understanding the idea.
+   - Format as lettered options (A, B, C, D).
+
+   Not every check needs to be multiple-choice — MCQ is inherently more gameable
+   than a generative prompt. Where it fits better, swap in: "predict what this
+   outputs/returns," "spot the bug in this variant," or "put these steps in the
+   right order." Use these especially when a well-built MCQ still feels too easy
+   to guess.
 
 3. **Respond to their answer:**
    - **Correct**: Briefly confirm why it's right, then move to the next chunk.
