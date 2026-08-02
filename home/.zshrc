@@ -21,3 +21,6 @@ alias gcm='git commit -m'
 
 # OpenClaw completions
 source "$HOME/.openclaw/completions/openclaw.zsh"
+
+# Added by Devin
+export PATH="/Users/pratikpugalia/.local/bin:$PATH"
